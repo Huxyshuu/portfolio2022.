@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+:root {
+   --highlight-color: hsl(46, 100%, 57%);
+   --highlight-color-darker: hsl(39, 75%, 42%); 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+margin: 0;
+padding: 0;
+width: 100%;
+background-color: #1D1D1D;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+font-family: 'Fugaz One', cursive, 'Times New Roman';
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+font-family: 'Fugaz One', cursive, 'Times New Roman';
 }
 
-.App-link {
-  color: #61dafb;
+h4 {
+font-family: 'Inria Sans', sans-serif, 'Times New Roman';
+font-weight: 200;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+font-family: 'Inria Sans', sans-serif, 'Times New Roman';
+font-weight: 200;
 }

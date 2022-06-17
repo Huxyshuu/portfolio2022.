@@ -1,0 +1,66 @@
+/* 
+Used fonts
+
+font-family: 'Kdam Thmor Pro', sans-serif;
+font-family: 'Inria Sans', sans-serif; 300 400 400i 700 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Kdam+Thmor+Pro&display=swap');
+
+#landingPage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5vh;
+}
+
+#title {
+    z-index: 1;
+    color: white;
+    margin: 0;
+    line-height: 1.1;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+button {
+    font-family: 'Inria Sans', sans-serif, 'Times New Roman';
+    font-weight: 200;
+    padding: 0.5rem 2rem; 
+    font-size: 1.1rem;
+    color: var(--highlight-color);
+    background-color: transparent;
+    border: 0.1rem solid var(--highlight-color);
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    z-index: 1;
+    align-self: flex-start;
+    margin-top: 10vh;
+}
+
+button:hover {
+    background-color: var(--highlight-color);
+    color: #1D1D1D;
+    cursor: pointer;
+}
+
+
+
+#H {
+    color: var(--highlight-color);
+}
+
+h2 {
+    font-family: 'Inria Sans', sans-serif, 'Times New Roman';
+    font-weight: 200;
+    color: #8D8D8D;
+    font-size: 2.5vh;
+}
+
+
+/* #canvas {
+    position: absolute;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+} */
+

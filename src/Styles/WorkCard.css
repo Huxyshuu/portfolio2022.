@@ -1,0 +1,46 @@
+.card {
+    border-radius: 3%;
+    background-color: #343434;
+    width: 35vh;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#name {
+    color: var(--highlight-color);
+    align-self: center;
+    margin: 0;
+    margin-top: 2vh;
+}
+
+.card p {
+    margin: 2vh;
+}
+
+.techs {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 1.6vh;
+    margin-inline: 1.5vh;
+}
+
+.techs p {
+    border: 0.1vh solid #1D1D1D;
+    padding: 0.5vh;
+    margin: 0.5vh;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-top: -1vh;
+}
+
+.buttons button {
+    margin: 4vh 1vh 2vh 1vh;
+    padding: 1vh 2vh;
+}

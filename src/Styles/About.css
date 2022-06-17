@@ -1,0 +1,41 @@
+/* 
+Used fonts
+
+font-family: 'Kdam Thmor Pro', sans-serif;
+font-family: 'Inria Sans', sans-serif; 300 400 400i 700 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Kdam+Thmor+Pro&display=swap');
+
+#about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5vh;
+    margin-top: 20vh;
+}
+
+p {
+    margin-right: 5vh;
+}
+
+.skills {
+    width: 90vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -5vh;
+    align-self: center;
+}
+
+.skills p {
+    font-size: 8vh;
+    margin: 1.1vh;
+    padding: 1vh;
+    width: 8vh;
+    aspect-ratio: 1 / 1;
+}
