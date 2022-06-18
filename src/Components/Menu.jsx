@@ -6,9 +6,7 @@ import Sidebar from './Sidebar';
 export default function Menu() {
 
     const [menuOpen, setMenuOpen] = useState(false);
-
-    const [isSmall, setIsSmall] = useState(false);
-
+    const [isSmall, setIsSmall] = useState();
 
     /* DISABLES SCROLLING */
     useEffect(() => {
@@ -25,11 +23,12 @@ export default function Menu() {
             document.body.style.overflow = "visible";
         }
         window.addEventListener('resize', checkWindowSize);
+        checkWindowSize();
 
         return () => {
             window.removeEventListener('resize', checkWindowSize);
         }
-    },)
+    })
 
     return (
         <div>
@@ -49,9 +48,9 @@ export default function Menu() {
                             
                         </div>
                         <div id="menuItems">
-                            <p id="menuWork" className="menuItems">Work</p>
-                            <p id="menuAbout" className="menuItems">About</p>
-                            <p id="menuContact" className="menuItems">Contact</p>
+                            <p id="menuWork" className="menuItems" >Work</p>
+                            <p id="menuAbout" className="menuItems" >About</p>
+                            <p id="menuContact" className="menuItems" >Contact</p>
                         </div>
                         <div id="contactIcons">
                             <Icon icon="cib:linkedin" />

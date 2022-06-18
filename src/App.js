@@ -6,6 +6,7 @@ import Contact from './Components/Contact';
 import Menu from './Components/Menu';
 
 function App() {
+
   return (
     <div className="App">
       <Menu />
