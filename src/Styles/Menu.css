@@ -1,0 +1,29 @@
+#menu {
+    position: fixed;
+    display: flex;
+    right: 0;
+}
+
+#closedMenuButton {
+    color: var(--highlight-color);
+    font-size: 6vh;
+    margin: 2vh;
+    transition: 0.3s ease-in-out;
+}
+
+#closedMenuButton:hover {
+    font-size: 7vh;
+    margin: 1.5vh;
+}
+
+#openedMenuButton {
+    color: var(--highlight-color);
+    font-size: 6vh;
+    margin: 2vh;
+    transition: 0.3s ease-in-out;
+}
+
+#openedMenuButton:hover {
+    font-size: 7vh;
+    margin: 1.5vh;
+}

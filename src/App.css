@@ -14,10 +14,12 @@ background-color: #1D1D1D;
 
 h1 {
 font-family: 'Fugaz One', cursive, 'Times New Roman';
+font-size: 4.5vh;
 }
 
 h2 {
 font-family: 'Fugaz One', cursive, 'Times New Roman';
+font-size: 2vh;
 }
 
 h4 {
@@ -28,4 +30,5 @@ font-weight: 200;
 p {
 font-family: 'Inria Sans', sans-serif, 'Times New Roman';
 font-weight: 200;
+font-size: 2vh;
 }

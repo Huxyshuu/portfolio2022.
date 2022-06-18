@@ -1,0 +1,100 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5vh;
+    margin-top: 20vh;
+}
+
+p {
+    margin-top: 5vh;
+    margin-right: 5vh;
+    margin-bottom: 5vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5vh;
+}
+
+form > * {
+    font-size: 2.5vh;
+    margin-bottom: 1vh;
+    font-family: 'Inria Sans', sans-serif, 'Times New Roman';
+    font-weight: 200;
+    padding: 1.5vh;
+    border-bottom: 0.2rem solid transparent;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    outline: none;
+    transition: border-bottom-color 0.3s ease-in-out;
+    background-color: #3D3D3D;
+    color: #8B8B8B;
+}
+
+form > *:focus {
+    border-bottom: 0.2rem solid var(--highlight-color);
+}
+
+#submit {
+    font-family: 'Inria Sans', sans-serif, 'Times New Roman';
+    font-weight: 200;
+    padding: 0.5rem 2rem; 
+    font-size: 1.1rem;
+    color: var(--highlight-color);
+    background-color: transparent;
+    border: 0.1rem solid var(--highlight-color);
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    z-index: 1;
+    align-self: flex-end;
+    margin-top: 3vh;
+    margin-bottom: 6vh;
+}
+
+#submit:hover {
+    background-color: var(--highlight-color);
+    color: #1D1D1D;
+    cursor: pointer;
+}
+
+#symbol {
+    color: var(--highlight-color);
+}
+
+#mapdiv {
+    margin-right: 5vh;
+    background-image: url("../images/yellowmap-marked.png");
+    background-size: 300%;
+    background-position: 65% 10%;
+    margin-bottom: 5vh;
+    padding-bottom: 20vh;
+}
+
+#infobox {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 30vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+}
+
+#infobox p {
+    font-size: 2.2vh;
+    padding-left: 1vh;
+    margin: 0;
+}
+
+#infoname {
+    padding-top: 1vh;
+}
+
+#infoaddress {
+    padding-top: 1vh;
+}
+
+#infomail {
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+}
+

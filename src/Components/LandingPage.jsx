@@ -6,7 +6,7 @@ export default function LandingPage() {
     <div id='landingPage'>
         <h1 id='title'>Hi,<br/>I'm <span id="H">H</span>ugo,<br/>web developer</h1>
         <h2>Front End Developer</h2>
-        <button>Contact me!</button>
+        <button id="landing-contact">Contact me!</button>
     </div>
   )
 }
