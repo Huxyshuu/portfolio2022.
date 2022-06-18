@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, forwardRef } from 'react'
 import '../Styles/Menu.css';
 import { Icon } from '@iconify/react';
 import Sidebar from './Sidebar';
