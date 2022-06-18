@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Kdam+Thmor+Pro&display=swap');
+
 #menu {
     position: fixed;
     display: flex;
@@ -9,6 +12,9 @@
     font-size: 6vh;
     margin: 2vh;
     transition: 0.3s ease-in-out;
+    position: fixed;
+    display: flex;
+    right: 0;
 }
 
 #closedMenuButton:hover {
@@ -21,9 +27,99 @@
     font-size: 6vh;
     margin: 2vh;
     transition: 0.3s ease-in-out;
+    position: fixed;
+    display: flex;
+    right: 0;
 }
 
 #openedMenuButton:hover {
     font-size: 7vh;
     margin: 1.5vh;
 }
+
+#menuTitle {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+#menuTitle h2 {
+    font-size: 4vh;
+    color: white;
+    margin: 0;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    z-index: 2;
+    margin-top: -1vh;
+}
+
+#menuTitle img {
+    color: white;
+    width: 15vh;
+    aspect-ratio: 1 / 1;
+}
+
+#menuTitle p {
+    color: #a5a5a5;
+    margin: 0;
+    margin-block: 2vh;
+}
+
+#menuBox {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#menuItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+#menuWork {
+    border-top: 0.1vh solid #282828;
+}
+
+#menuContact {
+    color: var(--highlight-color);
+}
+
+.menuItems {
+    font-size: 3vh;
+    margin: 0;
+    color: #8D8D8D;
+    border-bottom: 0.1vh solid #282828;
+    width: 85%;
+    text-align: center;
+    padding: 3vh;
+    transition: 0.3s ease-in-out;
+}
+
+.menuItems:hover {
+    color: var(--highlight-color);
+}
+
+#contactIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+#contactIcons > * {
+    color: #8D8D8D;
+    font-size: 4vh;
+    margin: 3vh;
+    transition: 0.3s ease-in-out;
+}
+
+#contactIcons > *:hover {
+    color: var(--highlight-color);
+}
+
