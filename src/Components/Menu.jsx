@@ -1,7 +1,8 @@
-import React, { useState, useEffect, forwardRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../Styles/Menu.css';
 import { Icon } from '@iconify/react';
 import Sidebar from './Sidebar';
+import { Link } from 'react-scroll'
 
 export default function Menu() {
 
@@ -38,7 +39,8 @@ export default function Menu() {
                 { menuOpen && 
                 <>
                     <div id="menuBox">
-                        <div id="menuTitle">
+                        <Link id="menuTitle" activeClass="active" to="landingPage" spy={true} smooth={true} 
+                            offset={0} duration={500} onClick={() => setMenuOpen(false)}>
                             <Icon icon="eva:close-circle-outline" id="openedMenuButton" onClick={() => setMenuOpen(false)}/>
                             <div id="logo">
                                 <img src={require('../images/ht-logo-yellow.png')} alt="" />
@@ -46,15 +48,29 @@ export default function Menu() {
                                 <p>Developer</p>
                             </div>
                             
-                        </div>
+                        </Link>
                         <div id="menuItems">
-                            <p id="menuWork" className="menuItems" >Work</p>
-                            <p id="menuAbout" className="menuItems" >About</p>
-                            <p id="menuContact" className="menuItems" >Contact</p>
+                            <Link activeClass="active" to="work" spy={true} smooth={true} 
+                            offset={-20} duration={500} id="menuWork" className="menuItems"
+                            onClick={() => setMenuOpen(false)}>
+                                Work
+                            </Link>
+
+                            <Link activeClass="active" to="about" spy={true} smooth={true} 
+                            offset={-20} duration={500} id="menuAbout" className="menuItems"
+                            onClick={() => setMenuOpen(false)}>
+                                About
+                            </Link>
+
+                            <Link activeClass="active" to="contact" spy={true} smooth={true} 
+                            offset={-20} duration={500} id="menuContact" className="menuItems"
+                            onClick={() => setMenuOpen(false)}>
+                                Contact
+                            </Link>
                         </div>
                         <div id="contactIcons">
-                            <Icon icon="cib:linkedin" />
-                            <Icon icon="carbon:logo-github" />
+                            <a href="https://www.linkedin.com/in/hugotamm/" target="_blank" rel="noreferrer"><Icon icon="cib:linkedin" /></a>
+                            <a href="https://github.com/Huxyshuu" target="_blank" rel="noreferrer"><Icon icon="carbon:logo-github" /></a>
                         </div>
                     </div>
                 </>
