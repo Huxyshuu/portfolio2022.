@@ -16,6 +16,7 @@
     display: flex;
     right: 0;
     z-index: 99;
+    background-color: #1d1d1db8;
 }
 
 #closedMenuButton:hover {

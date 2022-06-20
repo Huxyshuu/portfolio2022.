@@ -35,13 +35,17 @@ export default function About() {
     ]
 
     return (
-        <div id='about'>
-            <h3>About Me</h3>
+        <section id='about'>
+            
             <div id="sideby">
-                <p id="aboutInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, aspernatur quisquam? Aliquid id voluptatum possimus! Soluta repudiandae laudantium ducimus fugiat.
-                    <br /><br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia repellendus modi repellat magnam sed illum doloremque earum quae odit ratione atque deleniti ipsa.
-                </p>
+                <div>
+                    <h3>About Me</h3>
+                    <p id="aboutInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, aspernatur quisquam? Aliquid id voluptatum possimus! Soluta repudiandae laudantium ducimus fugiat.
+                        <br /><br />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia repellendus modi repellat magnam sed illum doloremque earum quae odit ratione atque deleniti ipsa.
+                    </p>
+                </div>
+                
 
                 <div className="skills">
                     {
@@ -52,6 +56,6 @@ export default function About() {
                 </div>
             </div>
             
-        </div>
+        </section>
     )
 }

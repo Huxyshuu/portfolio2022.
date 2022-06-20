@@ -26,10 +26,10 @@ font-family: 'Inria Sans', sans-serif; 300 400 400i 700
     white-space: nowrap;
 }
 
-button {
+#landing-contact {
     font-family: 'Inria Sans', sans-serif, 'Times New Roman';
     font-weight: 200;
-    padding: 0.5vh 2vh; 
+    padding: 1vh 2vh; 
     font-size: 1.1vh;
     color: var(--highlight-color);
     background-color: transparent;
@@ -37,11 +37,11 @@ button {
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     z-index: 1;
     align-self: flex-start;
-    margin-top: 10vh;
+    margin-top: 8vh;
     white-space: nowrap;
 }
 
-button:hover {
+#landing-contact:hover {
     background-color: var(--highlight-color);
     color: #1D1D1D;
     cursor: pointer;

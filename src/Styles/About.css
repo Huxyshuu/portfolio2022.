@@ -21,14 +21,11 @@ font-family: 'Inria Sans', sans-serif; 300 400 400i 700
 }
 
 .skills {
-    width: 90vw;
-    height: 55vh;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
-    margin-left: 0vh;
     align-self: center;
 }
 
@@ -38,6 +35,7 @@ font-family: 'Inria Sans', sans-serif; 300 400 400i 700
     padding: 1vh;
     width: 6vh;
     aspect-ratio: 1 / 1;
+    text-align: center;
 }
 
 #sideby {
@@ -50,16 +48,12 @@ font-family: 'Inria Sans', sans-serif; 300 400 400i 700
     }
 
     .skills p {
-        width: 8vh;
+        font-size: 7vh;
+        width: 13vw;
     }
 }
 
 @media screen and (min-width: 530px) {
-
-    .skills p {
-        font-size: 8vh;
-        margin: 2vh;
-    }
 }
 
 @media screen and (min-width: 600px) {
@@ -71,36 +65,17 @@ font-family: 'Inria Sans', sans-serif; 300 400 400i 700
         margin-left: 7vh;
     }
 
+    .skills p {
+        font-size: 9vw;
+        width: 9vw;
+    }
+
     #aboutInfo {
         width: 65vh;
     }
-
-    .skills p {
-        font-size: 9vh;
-        margin: 3vh;
-    }
 }
 
-@media screen and (min-width: 706px) {
-
-    .skills p {
-        font-size: 500%;
-        margin: 5%;
-    }
-}
-
-@media screen and (min-width: 880px) {
-
-    .skills p {
-        font-size: 9vh;
-        margin: 3vh;
-    }
-    #aboutInfo {
-        width: 80vh;
-    }
-}
-
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 832px) {
     #about {
         height: 80vh;
         margin-left: 10vh;
@@ -111,41 +86,50 @@ font-family: 'Inria Sans', sans-serif; 300 400 400i 700
     }
     
     #aboutInfo {
-        width: 75vh;
-    }
-
-    .skills {
-        justify-content: flex-end;
-        width: 90vh;
-        margin-right: 5vh;
-    }
-
-    .skills p {
-        font-size: 8vh;
-        margin: 4vh;
-        width: 6vh;
+        width: 50vh;
+        font-size: 2.5vh;
     }
     
     h3 {
         font-size: 7vh;
     }
+
+    .skills p {
+        font-size: 8vh;
+    }
 }
 
 @media screen and (min-width: 1300px) {
-    .skills {
-        flex-wrap: 0 0 100%;
-    }
 
     #about {
         margin-left: 25vh;
+    }
+
+    #aboutInfo {
+        width: 50vh;
+    }
+
+    .skills p {
+        margin: 0.5vh;
+        font-size: 9vh;
+        width: 15vh;
     }
 }
 
 @media screen and (min-width: 1500px) {
 
+    #aboutInfo {
+        width: 60vh;
+    }
+
+    .skills {
+        margin-left: 10vh;
+    }
+
     .skills p {
-        font-size: 8vh;
-        margin: 4vh;
+        margin: 0.5vh;
+        font-size: 9vh;
+        width: 15vh;
     }
 }
 
