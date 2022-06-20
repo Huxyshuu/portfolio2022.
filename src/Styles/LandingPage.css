@@ -113,3 +113,9 @@ h2 {
         margin-left: 10vh;
     }
 }
+
+@media screen and (min-width: 1300px) {
+    #landingPage {
+        margin-left: 25vh;
+    }
+}

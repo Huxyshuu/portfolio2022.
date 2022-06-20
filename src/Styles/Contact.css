@@ -41,14 +41,14 @@ form > *:focus {
 #submit {
     font-family: 'Inria Sans', sans-serif, 'Times New Roman';
     font-weight: 200;
-    padding: 0.5rem 2rem; 
-    font-size: 1.1rem;
+    padding: 1vh 2.5vh; 
+    font-size: 2.5vh;
     color: var(--highlight-color);
     background-color: transparent;
-    border: 0.1rem solid var(--highlight-color);
+    border: 0.1vh solid var(--highlight-color);
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     z-index: 1;
-    align-self: flex-end;
+    align-self: flex-start;
     margin-top: 3vh;
     margin-bottom: 6vh;
 }
@@ -66,7 +66,7 @@ form > *:focus {
 #mapdiv {
     margin-right: 5vh;
     background-image: url("../images/yellowmap-marked.png");
-    background-size: 300%;
+    background-size: 100vh;
     background-position: 65% 10%;
     margin-bottom: 5vh;
     padding-bottom: 20vh;
@@ -83,6 +83,7 @@ form > *:focus {
     font-size: 2.2vh;
     padding-left: 1vh;
     margin: 0;
+    width: 100%;
 }
 
 #infoname {
@@ -96,5 +97,75 @@ form > *:focus {
 #infomail {
     padding-top: 3vh;
     padding-bottom: 1vh;
+}
+
+@media screen and (min-width: 444px) {
+    p {
+        font-size: 2.2vh;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    h3 {
+        font-size: 6vh;
+    }
+
+    p {
+        width: 65vh;
+    }
+
+    #contact {
+        margin-left: 7vh;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #contactbox {
+        max-width: 100vh;
+    }
+
+    #contactbox p {
+        max-width: 50vh;
+    }
+
+    #mapdiv {
+        margin: 0;
+        width: 60vw;
+        justify-content: flex-end;
+        background-image: url("../images/yellowmap-marked.png");
+        background-size: 130vh;
+        background-position: 65% 10%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    h3 {
+        font-size: 7vh;
+    }
+    p {
+        width: 80vh;
+    }
+
+    #contact {
+        margin-left: 10vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #contact {
+        margin-left: 25vh;
+    }
+
+    #submit {
+        padding: 1vh 2.5vh; 
+        font-size: 2vh;
+    }
 }
 

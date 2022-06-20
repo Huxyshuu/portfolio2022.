@@ -12,7 +12,7 @@ export default function Menu() {
     /* DISABLES SCROLLING */
     useEffect(() => {
         const checkWindowSize = () => {
-            setIsSmall(window.innerWidth < 1301 ? true : false);
+            setIsSmall(window.innerWidth < 1300 ? true : false);
             if (!isSmall) {
                 setMenuOpen(false);
             }

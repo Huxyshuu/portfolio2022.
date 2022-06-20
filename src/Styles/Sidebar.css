@@ -1,0 +1,106 @@
+/* 
+Used fonts
+
+font-family: 'Fugaz One', cursive;  400
+font-family: 'Inria Sans', sans-serif; 300 400 400i 700 
+*/
+
+nav {
+    position: fixed;
+    width: 14vh;
+    z-index: 10;
+}
+
+#bigLogo {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 22vh;
+    width: 14vh;
+}
+
+#bigLogo:hover {
+    cursor: pointer;
+}
+
+
+#logo-title {
+    font-size: 3.5vh;
+    margin: 0;
+    font-family: 'Inria Sans', sans-serif, "Times New Roman";
+    font-weight: 700;
+    color: white;
+}
+
+#logo-text {
+    font-size: 1.8vh;
+    font-family: 'Inria Sans', sans-serif, "Times New Roman";
+    font-weight: 200;
+    color: #8D8D8D;
+    text-align: center;
+    margin: 0;
+    margin-block: 1vh;
+}
+
+#bigLogo img {
+    width: 10vh;
+    aspect-ratio: 1 / 1;
+    margin-top: 1vh;
+}
+
+#nav-menu {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 14vh;
+    height: 100vh;
+    background-color: #181818;
+    margin-top: 15vh;
+}
+
+#nav-menu > a {
+    text-align: center;
+    display: inline-block;
+    padding-block: 1vh;
+    width: 100%;
+    font-size: 2.2vh;
+    font-family: 'Inria Sans', sans-serif, "Times New Roman";
+    font-weight: 200;
+    text-decoration: none;
+    border-top: 0.1vh solid #8D8D8D;
+    color: #8D8D8D;
+    transition: all 0.2s ease-in-out;
+}
+
+#nav-menu a:hover {
+    color: var(--highlight-color);
+    cursor: pointer;
+}
+
+#sidebarContact {
+    color: var(--highlight-color) !important;
+    border-bottom: 0.1rem solid #8D8D8D;
+}
+
+#menu-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+#menu-icons a {
+    font-size: 3vh;
+    color: #8D8D8D;
+    margin-inline: 1rem;
+    margin-top: 20vh;
+    padding: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+#menu-icons i:hover {
+    color: var(--highlight-color);
+    cursor: pointer;
+}

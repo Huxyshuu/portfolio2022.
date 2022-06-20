@@ -22,21 +22,23 @@ h3 {
     margin: 0;
     line-height: 1.1;
     font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: 0.3s ease-in-out;
 }
 
 p {
     color: white;
     margin-right: 5vh;
+    transition: 0.3s ease-in-out;
 }
 
 button {
     font-family: 'Inria Sans', sans-serif, 'Times New Roman';
     font-weight: 200;
-    padding: 0.5rem 2rem; 
-    font-size: 1.1rem;
+    padding: 1vh 2.5vh; 
+    font-size: 2.5vh;
     color: var(--highlight-color);
     background-color: transparent;
-    border: 0.1rem solid var(--highlight-color);
+    border: 0.1vh solid var(--highlight-color);
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     z-index: 1;
     align-self: flex-start;
@@ -55,4 +57,48 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     margin-left: -5vh;
+}
+
+@media screen and (min-width: 444px) {
+    #work-info {
+        font-size: 2.2vh;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    h3 {
+        font-size: 6vh;
+    }
+
+    #work {
+        margin-left: 7vh;
+    }
+
+    #work-info {
+        width: 65vh;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    h3 {
+        font-size: 7vh;
+    }
+    #work-info {
+        width: 80vh;
+    }
+
+    #work {
+        margin-left: 10vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #work {
+        margin-left: 25vh;
+    }
+
+    button {
+        padding: 1vh 2.5vh; 
+        font-size: 2vh;
+    }
 }

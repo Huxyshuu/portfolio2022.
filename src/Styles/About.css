@@ -28,7 +28,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin-left: -5vh;
+    margin-left: 0vh;
     align-self: center;
 }
 
@@ -39,3 +39,113 @@ p {
     width: 6vh;
     aspect-ratio: 1 / 1;
 }
+
+#sideby {
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 444px) {
+    p {
+        font-size: 2.2vh;
+    }
+
+    .skills p {
+        width: 8vh;
+    }
+}
+
+@media screen and (min-width: 530px) {
+
+    .skills p {
+        font-size: 8vh;
+        margin: 2vh;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    h3 {
+        font-size: 6vh;
+    }
+
+    #about {
+        margin-left: 7vh;
+    }
+
+    p {
+        width: 65vh;
+    }
+
+    .skills p {
+        font-size: 9vh;
+        margin: 3vh;
+    }
+}
+
+@media screen and (min-width: 706px) {
+
+    .skills p {
+        font-size: 500%;
+        margin: 5%;
+    }
+}
+
+@media screen and (min-width: 880px) {
+
+    .skills p {
+        font-size: 9vh;
+        margin: 3vh;
+    }
+    p {
+        width: 80vh;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    #about {
+        height: 80vh;
+        margin-left: 10vh;
+    }
+    
+    #sideby {
+        display: flex;
+    }
+    
+    p {
+        width: 75vh;
+    }
+
+    .skills {
+        justify-content: flex-end;
+        width: 58vh;
+        margin-right: 5vh;
+    }
+
+    .skills p {
+        font-size: 8vh;
+        margin: 2vh;
+        width: 6vh;
+    }
+    
+    h3 {
+        font-size: 7vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .skills {
+        flex-wrap: 0 0 100%;
+    }
+
+    #about {
+        margin-left: 25vh;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    .skills p {
+        font-size: 8vh;
+        margin: 2vh;
+    }
+}
+

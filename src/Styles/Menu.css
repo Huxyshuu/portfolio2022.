@@ -50,6 +50,10 @@
     margin-top: 2vh;
 }
 
+#logo p {
+    text-align: center;
+}
+
 #menuTitle h2 {
     font-size: 4vh;
     color: white;
