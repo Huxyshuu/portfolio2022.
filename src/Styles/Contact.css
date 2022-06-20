@@ -68,6 +68,8 @@ form > *:focus {
     background-size: 100vh;
     background-position: 65% 10%;
     padding-bottom: 20vh;
+    margin-right: 5vh;
+    margin-bottom: 5vh;
 }
 
 #infobox {
@@ -135,6 +137,7 @@ form > *:focus {
     #mapdiv {
         width: 60vw;
         background-size: 130vh;
+        margin: 0;
     }
 }
 
@@ -147,9 +150,18 @@ form > *:focus {
         font-size: 2.5vh;
     }
 
+    #contactbox {
+        width: 70vh;
+    }
+
     #contact {
         margin-left: 10vh;
     }
+
+    #mapdiv {
+        width: 70vh;
+    }
+    
     #submit {
         padding: 1vh 2.5vh; 
         font-size: 2.5vh;
@@ -159,6 +171,12 @@ form > *:focus {
 @media screen and (min-width: 1300px) {
     #contact {
         margin-left: 25vh;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #mapdiv {
+        width: 90vh;
     }
 }
 

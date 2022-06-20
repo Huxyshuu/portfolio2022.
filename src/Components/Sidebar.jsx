@@ -16,11 +16,11 @@ export default function Sidebar() {
         </div>
         <div id="nav-menu">
             <Link activeClass="active" to="work" spy={true} smooth={true} 
-              offset={-20} duration={500} id="sidebarWork">Work</Link>
+              offset={-50} duration={500} id="sidebarWork">Work</Link>
             <Link activeClass="active" to="about" spy={true} smooth={true} 
-              offset={-20} duration={500} id="sidebarAbout">About</Link>
+              offset={-100} duration={500} id="sidebarAbout">About</Link>
             <Link activeClass="active" to="contact" spy={true} smooth={true} 
-              offset={-20} duration={500} id="sidebarContact">Contact</Link>
+              offset={0} duration={500} id="sidebarContact">Contact</Link>
             <div id="menu-icons">
               <a href="https://www.linkedin.com/in/hugotamm/" target="_blank" rel="noreferrer"><Icon icon="cib:linkedin" /></a>
               <a href="https://github.com/Huxyshuu" target="_blank" rel="noreferrer"><Icon icon="carbon:logo-github" /></a>

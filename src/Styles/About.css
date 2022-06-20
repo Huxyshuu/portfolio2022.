@@ -22,20 +22,25 @@ font-family: 'Inria Sans', sans-serif; 300 400 400i 700
 
 .skills {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    align-self: center;
+    display: grid; 
+    margin-left: -3vh;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". . ."
+        ". . ."
+        ". . ."
+        ". . ."; 
 }
 
 .skills p {
     font-size: 7vh;
     margin: 1vh;
-    padding: 1vh;
-    width: 6vh;
+    padding: 2vh;
     aspect-ratio: 1 / 1;
     text-align: center;
+    
 }
 
 #sideby {
@@ -47,6 +52,10 @@ font-family: 'Inria Sans', sans-serif; 300 400 400i 700
         font-size: 2.2vh;
     }
 
+    .skills {
+        margin: 0;
+    }
+
     .skills p {
         font-size: 7vh;
         width: 13vw;
@@ -54,6 +63,14 @@ font-family: 'Inria Sans', sans-serif; 300 400 400i 700
 }
 
 @media screen and (min-width: 530px) {
+    .skills {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-areas: 
+            ". . . ."
+            ". . . ."
+            ". . . ."; 
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -86,7 +103,7 @@ font-family: 'Inria Sans', sans-serif; 300 400 400i 700
     }
     
     #aboutInfo {
-        width: 50vh;
+        width: 100%;
         font-size: 2.5vh;
     }
     
@@ -95,6 +112,7 @@ font-family: 'Inria Sans', sans-serif; 300 400 400i 700
     }
 
     .skills p {
+        margin: 0;
         font-size: 8vh;
     }
 }
@@ -110,16 +128,14 @@ font-family: 'Inria Sans', sans-serif; 300 400 400i 700
     }
 
     .skills p {
-        margin: 0.5vh;
         font-size: 9vh;
-        width: 15vh;
     }
 }
 
 @media screen and (min-width: 1500px) {
 
     #aboutInfo {
-        width: 60vh;
+        width: 50vh;
     }
 
     .skills {
@@ -127,9 +143,9 @@ font-family: 'Inria Sans', sans-serif; 300 400 400i 700
     }
 
     .skills p {
-        margin: 0.5vh;
         font-size: 9vh;
-        width: 15vh;
+        margin-bottom: 5vh;
+        width: 10vh;
     }
 }
 
