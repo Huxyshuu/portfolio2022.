@@ -6,7 +6,7 @@ export default function Contact() {
     <div id="contact">
         <div id="contactbox">
             <h3>Contact Me</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, aspernatur quisquam? Aliquid id voluptatum possimus! Soluta repudiandae laudantium ducimus fugiat.</p>
+                <p id="contactInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, aspernatur quisquam? Aliquid id voluptatum possimus! Soluta repudiandae laudantium ducimus fugiat.</p>
             <form action="" id="contactform">
                 <input type="text" name="name" placeholder="Name"/>
                 <input type="text" name="email" placeholder="Email"/>

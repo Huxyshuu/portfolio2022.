@@ -6,7 +6,7 @@
     margin-top: 20vh;
 }
 
-p {
+#contactInfo {
     margin-top: 5vh;
     margin-right: 5vh;
     margin-bottom: 5vh;
@@ -100,7 +100,7 @@ form > *:focus {
 }
 
 @media screen and (min-width: 444px) {
-    p {
+    #contactInfo {
         font-size: 2.2vh;
     }
 }
@@ -110,7 +110,7 @@ form > *:focus {
         font-size: 6vh;
     }
 
-    p {
+    #contactInfo {
         width: 65vh;
     }
 
@@ -135,13 +135,8 @@ form > *:focus {
     }
 
     #mapdiv {
-        margin: 0;
         width: 60vw;
-        justify-content: flex-end;
-        background-image: url("../images/yellowmap-marked.png");
         background-size: 130vh;
-        background-position: 65% 10%;
-        background-repeat: no-repeat;
     }
 }
 
@@ -149,23 +144,22 @@ form > *:focus {
     h3 {
         font-size: 7vh;
     }
-    p {
+    #contactInfo {
         width: 80vh;
     }
 
     #contact {
         margin-left: 10vh;
     }
+    #submit {
+        padding: 1vh 2.5vh; 
+        font-size: 2.5vh;
+    }
 }
 
 @media screen and (min-width: 1300px) {
     #contact {
         margin-left: 25vh;
-    }
-
-    #submit {
-        padding: 1vh 2.5vh; 
-        font-size: 2vh;
     }
 }
 

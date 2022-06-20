@@ -38,7 +38,7 @@ export default function About() {
         <div id='about'>
             <h3>About Me</h3>
             <div id="sideby">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, aspernatur quisquam? Aliquid id voluptatum possimus! Soluta repudiandae laudantium ducimus fugiat.
+                <p id="aboutInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, aspernatur quisquam? Aliquid id voluptatum possimus! Soluta repudiandae laudantium ducimus fugiat.
                     <br /><br />
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia repellendus modi repellat magnam sed illum doloremque earum quae odit ratione atque deleniti ipsa.
                 </p>

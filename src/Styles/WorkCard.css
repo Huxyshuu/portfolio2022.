@@ -43,6 +43,7 @@
 .buttons button {
     margin: 4vh 1vh 2vh 1vh;
     padding: 1vh 2vh;
+    font-size: 2vh;
 }
 
 @media screen and (min-width: 444px) {
@@ -52,13 +53,4 @@
 }
 
 @media screen and (min-width: 600px) {
-    .techs {
-        font-size: 1.6vh;
-        margin-inline: 1.5vh;
-    }
-    
-    .techs p {
-        padding: 0.5vh;
-        margin: 0.5vh;
-    }
 }
