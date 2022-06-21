@@ -17,7 +17,9 @@ font-family: 'Inria Sans', sans-serif; 300 400 400i 700
 }
 
 #aboutInfo {
+    margin-top: 5vh;
     margin-right: 5vh;
+    transition: 0.3s ease-in-out;
 }
 
 .skills {
@@ -50,6 +52,38 @@ font-family: 'Inria Sans', sans-serif; 300 400 400i 700
 #sideby {
     justify-content: space-between;
 }
+
+
+.text-highlights {
+    color: var(--highlight-color);
+}
+
+.text-highlights:hover {
+    color: var(--highlight-color);
+}
+
+#interwebs:hover::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/interweb.png);
+    background-repeat: no-repeat;
+    transform: translate(2vh, -2vh);
+    width: 200px;  /* These are just large enough to definitely   */
+    height: 200px; /* contain the image. Image could be any size. */
+    z-index: 11;
+}
+
+#problems:hover::after {
+    content: '';
+    position: absolute;
+    background-image: url(https://projecteuler.net/profile/AsTrone.png);
+    background-repeat: no-repeat;
+    transform: translate(2vh, -2vh);
+    width: 200px;  /* These are just large enough to definitely   */
+    height: 200px; /* contain the image. Image could be any size. */
+    z-index: 11;
+}
+
 
 @media screen and (min-width: 444px) {
     #aboutInfo {

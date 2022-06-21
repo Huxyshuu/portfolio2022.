@@ -27,6 +27,7 @@ h3 {
 
 #work-info {
     color: white;
+    margin-top: 5vh;
     margin-right: 5vh;
     transition: 0.3s ease-in-out;
 }

@@ -40,9 +40,15 @@ export default function About() {
             <div id="sideby">
                 <div>
                     <h3>About Me</h3>
-                    <p id="aboutInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, aspernatur quisquam? Aliquid id voluptatum possimus! Soluta repudiandae laudantium ducimus fugiat.
+                    <p id="aboutInfo">
+                        Hi, I'm a Front-End Developer located in Finland.
+                        I love programming and designing the <span id="interwebs" className="text-highlights">interwebs</span> as well as
+                        finding new interesting ways to solve <span id="problems" className="text-highlights">problems</span> with Python and C#.
+                        I also love to play music!
+
                         <br /><br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia repellendus modi repellat magnam sed illum doloremque earum quae odit ratione atque deleniti ipsa.
+
+                        I'm currently studying Mehcanical Engineering in Aalto University as a B.Sc student.
                     </p>
                 </div>
                 
