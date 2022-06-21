@@ -1,0 +1,26 @@
+#mini-container {
+    position: fixed;
+    display: flex;
+    right: 0;
+    top: 0;
+    background-color: #0000007d;
+    z-index: 99;
+}
+
+#mini-container p {
+    margin: 0;
+    padding: 2vh;
+    width: 2vh;
+    transition: 0.05s ease-in-out;
+}
+
+#mini-container p:hover {
+    box-shadow: inset 0 0 0.1vh 0.1vh var(--highlight-color);
+    cursor: pointer;
+}
+
+#mini-container p:active {
+    background-color: var(--highlight-color);
+    cursor: pointer;
+    box-shadow: 0 0 0.5vh 0.5vh var(--highlight-color);
+}

@@ -38,6 +38,10 @@ form > *:focus {
     border-bottom: 0.2rem solid var(--highlight-color);
 }
 
+#landingPage a {
+    max-width: 25%;
+}
+
 #submit {
     font-family: 'Inria Sans', sans-serif, 'Times New Roman';
     font-weight: 200;

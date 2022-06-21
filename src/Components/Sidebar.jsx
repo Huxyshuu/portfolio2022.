@@ -4,15 +4,16 @@ import { Icon } from '@iconify/react';
 import {Link} from 'react-scroll';
 
 export default function Sidebar() {
+
   return (
     <nav>
         <div id="bigLogo">
             <Link activeClass="active" to="landingPage" spy={true} smooth={true} 
                     offset={0} duration={500}>
                 <img src={require('../images/ht-logo-yellow.png')} alt="Logo" />
+                <h5 id="logo-title">Hugo</h5>
+                <p id="logo-text">Developer</p>
             </Link>
-            <h5 id="logo-title">Hugo</h5>
-            <p id="logo-text">Developer</p>
         </div>
         <div id="nav-menu">
             <Link activeClass="active" to="work" spy={true} smooth={true} 

@@ -7,6 +7,42 @@
     right: 0;
 }
 
+#big-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    background-color: #0000007d;
+    z-index: 99;
+    box-shadow: 0 0 0.1vh 0.2vh var(--highlight-color);
+    cursor: pointer;
+}
+
+#big-container p {
+    margin: 0;
+    padding: 2vh;
+    width: 4vh;
+    font-size: 3vh;
+    text-align: center;
+    transition: 0.05s ease-in-out;
+}
+
+#big-container p:hover {
+    box-shadow: inset 0 0 0.1vh 0.1vh var(--highlight-color);
+    cursor: pointer;
+}
+
+#big-container p:active {
+    background-color: var(--highlight-color);
+    cursor: pointer;
+    box-shadow: 0 0 0.5vh 0.5vh var(--highlight-color);
+}
+
+#menu-fi {
+    border-inline: 0.1vh solid var(--highlight-color);
+}
+
 #closedMenuButton {
     color: var(--highlight-color);
     font-size: 6vh;
@@ -135,5 +171,11 @@
 
 #contactIcons > *:hover {
     color: var(--highlight-color);
+}
+
+@media screen and (min-width: 600px) {
+    #big-container  {
+        flex-direction: row;
+    }
 }
 

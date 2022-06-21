@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 import Sidebar from './Sidebar';
 import { Link } from 'react-scroll'
 
-export default function Menu() {
+export default function Menu(props) {
 
     const [menuOpen, setMenuOpen] = useState(false);
     const [isSmall, setIsSmall] = useState();
@@ -39,6 +39,12 @@ export default function Menu() {
                 { menuOpen && 
                 <>
                     <div id="menuBox">
+                        <div id="big-container">
+                            <p id="menu-en" onClick={() => { props.setLanguage('EN'); setMenuOpen(false); }}>EN</p>
+                            <p id="menu-fi" onClick={() => { props.setLanguage('FI'); setMenuOpen(false); }}>FI</p>
+                            <p id="menu-jp" onClick={() => { props.setLanguage('JP'); setMenuOpen(false); }}>JP</p>
+
+                        </div>
                         <Link id="menuTitle" activeClass="active" to="landingPage" spy={true} smooth={true} 
                             offset={0} duration={500} onClick={() => setMenuOpen(false)}>
                             <Icon icon="eva:close-circle-outline" id="openedMenuButton" onClick={() => setMenuOpen(false)}/>
@@ -77,7 +83,7 @@ export default function Menu() {
                 }
             </> 
             : 
-            <Sidebar />}
+            <Sidebar/>}
         </div>
     )
     }

@@ -2,10 +2,15 @@
 Used fonts
 
 font-family: 'Kdam Thmor Pro', sans-serif;
-font-family: 'Inria Sans', sans-serif; 300 400 400i 700 
+font-family: 'Inria Sans', sans-serif; 300 400 400i 700
+
+JAPANESE
+font-family: 'Kosugi Maru', sans-serif;
+font-family: 'Murecho', sans-serif;
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Murecho:wght@300&display=swap');
 
 #landingPage {
     height: 100vh;
@@ -21,13 +26,13 @@ font-family: 'Inria Sans', sans-serif; 300 400 400i 700
     color: white;
     margin: 0;
     line-height: 1.1;
-    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Kdam Thmor Pro', 'Kosugi Maru', sans-serif;
     transition: 0.3s ease-in-out;
     white-space: nowrap;
 }
 
 #landing-contact {
-    font-family: 'Inria Sans', sans-serif, 'Times New Roman';
+    font-family: 'Inria Sans', 'Murecho', sans-serif, 'Times New Roman';
     font-weight: 200;
     padding: 1vh 2vh; 
     font-size: 1.1vh;

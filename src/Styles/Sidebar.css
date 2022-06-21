@@ -30,6 +30,7 @@ nav {
 #logo-title {
     font-size: 3.5vh;
     margin: 0;
+    margin-left: 1vh;
     font-family: 'Inria Sans', sans-serif, "Times New Roman";
     font-weight: 700;
     color: white;
