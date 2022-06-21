@@ -44,13 +44,22 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
+
+.card:hover {
+    box-shadow: 0 0 4vh 0.2vh var(--highlight-color);
+    transform: scale(1.1);
+}
+
+
 
 #name {
     color: var(--highlight-color);
     align-self: center;
     margin: 0;
     margin-top: 2vh;
+    font-size: 2.5vh;
 }
 
 .card p {
@@ -61,27 +70,28 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    font-size: 1.6vh;
+    
     margin-inline: 1.5vh;
 }
 
 .techs p {
-    border: 0.1vh solid #1D1D1D;
+    border: 0.2vh solid #1D1D1D;
     padding: 0.5vh;
     margin: 0.5vh;
+    font-size: 1.4vh;
 }
 
 .buttons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-self: center;
-    margin-top: -1vh;
+    margin-top: 1vh;
 }
 
 .buttons button {
-    margin: 4vh 1vh 2vh 1vh;
+    margin: 1vh 1vh 2vh 1vh;
     padding: 1vh 2vh;
-    font-size: 2vh;
+    font-size: 1.8vh;
     font-family: 'Inria Sans', sans-serif, 'Times New Roman';
     font-weight: 200;
     padding: 1vh 2.5vh;
@@ -99,6 +109,20 @@
     cursor: pointer;
 }
 
+@media screen and (min-width: 384px) {
+
+    .buttons {
+        flex-direction: row;
+        margin-top: -1vh;
+    }
+    
+    
+    .buttons button {
+        margin: 4vh 1vh 2vh 1vh;
+        font-size: 2vh;
+    }
+}
+
 @media screen and (min-width: 444px) {
     #card-info {
         font-size: 2.2vh;
@@ -106,4 +130,59 @@
 }
 
 @media screen and (min-width: 600px) {
+    .techs p {
+        font-size: 1.8vh;
+    }
 }
+
+/* ANIMATIONS */
+
+@-webkit-keyframes slide-in-fwd-left {
+    0% {
+      -webkit-transform: translateZ(-10vh) translateX(-4vh);
+              transform: translateZ(-10vh) translateX(-4vh);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-fwd-left {
+    0% {
+      -webkit-transform: translateZ(-10vh) translateX(-4vh);
+              transform: translateZ(-10vh) translateX(-4vh);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes slide-in-fwd-right {
+    0% {
+      -webkit-transform: translateZ(-10vh) translateX(4vh);
+              transform: translateZ(-10vh) translateX(4vh);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-fwd-right {
+    0% {
+      -webkit-transform: translateZ(-10vh) translateX(4vh);
+              transform: translateZ(-10vh) translateX(4vh);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+      opacity: 1;
+    }
+  }
