@@ -84,11 +84,21 @@ h3 {
         font-size: 7vh;
     }
     #work-info {
-        width: 100vh;
         font-size: 2.5vh;
     }
 
     #work {
+        margin-left: 10vh;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    #workContainer {
+        margin-top: 20vh;
+        width: 50%;
+    }
+
+    .container {
         margin-left: 10vh;
     }
 
@@ -101,5 +111,9 @@ h3 {
 @media screen and (min-width: 1300px) {
     #work {
         margin-left: 25vh;
+    }
+
+    .container {
+        margin-left: 15vh;
     }
 }
