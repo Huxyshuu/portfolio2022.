@@ -45,9 +45,9 @@ export default function Menu(props) {
                             <p id="menu-jp" onClick={() => { props.setLanguage('JP'); setMenuOpen(false); }}>JP</p>
 
                         </div>
+                        <Icon icon="eva:close-circle-outline" id="openedMenuButton" onClick={() => setMenuOpen(false)}/>
                         <Link id="menuTitle" activeClass="active" to="landingPage" spy={true} smooth={true} 
                             offset={0} duration={500} onClick={() => setMenuOpen(false)}>
-                            <Icon icon="eva:close-circle-outline" id="openedMenuButton" onClick={() => setMenuOpen(false)}/>
                             <div id="logo">
                                 <img src={require('../images/ht-logo-yellow.png')} alt="" />
                                 <h2>Hugo</h2>
