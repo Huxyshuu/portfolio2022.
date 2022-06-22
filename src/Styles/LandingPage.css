@@ -34,8 +34,8 @@ font-family: 'Murecho', sans-serif;
 #landing-contact {
     font-family: 'Inria Sans', 'Murecho', sans-serif, 'Times New Roman';
     font-weight: 200;
-    padding: 1vh 2vh; 
-    font-size: 1.1vh;
+    padding: 1vh 4vh; 
+    font-size: 2.5vh;
     color: var(--highlight-color);
     background-color: transparent;
     border: 0.1vh solid var(--highlight-color);

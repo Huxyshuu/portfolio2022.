@@ -39,10 +39,6 @@
     box-shadow: 0 0 0.5vh 0.5vh var(--highlight-color);
 }
 
-#menu-fi {
-    border-inline: 0.1vh solid var(--highlight-color);
-}
-
 #closedMenuButton {
     color: var(--highlight-color);
     font-size: 6vh;
@@ -122,6 +118,10 @@
     z-index: 98;
 }
 
+#menu-fi {
+    border-block: 0.1vh solid var(--highlight-color);
+}
+
 #menuItems {
     font-family: 'Inria Sans', sans-serif, 'Times New Roman';
     font-weight: 200;
@@ -177,5 +177,14 @@
     #big-container  {
         flex-direction: row;
     }
+
+    #menu-fi {
+        border-inline: 0.1vh solid var(--highlight-color);
+    }
+
+    #menu-fi {
+        border-block: 0;
+    }
+    
 }
 
