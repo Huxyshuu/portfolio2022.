@@ -75,7 +75,7 @@ font-family: 'Murecho', sans-serif;
     transform: translate(2vh, -2vh);
     width: 200px;  /* These are just large enough to definitely   */
     height: 200px; /* contain the image. Image could be any size. */
-    z-index: 11;
+    z-index: 12;
 }
 
 #problems:hover::after {
@@ -86,7 +86,7 @@ font-family: 'Murecho', sans-serif;
     transform: translate(2vh, -2vh);
     width: 200px;  /* These are just large enough to definitely   */
     height: 200px; /* contain the image. Image could be any size. */
-    z-index: 11;
+    z-index: 12;
 }
 
 
