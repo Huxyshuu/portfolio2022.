@@ -8,10 +8,12 @@ export default function WorkCard() {
 
     const cards = [
         {
-            title: 'Project 1',
-            img: 'https://p4.wallpaperbetter.com/wallpaper/858/231/578/league-of-legends-armor-irelia-wallpaper-preview.jpg',
-            desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, at!',
-            techs: ['HTML & CSS', 'Javascript', 'React', 'Responsivness', 'MySQL', 'Sass'],
+            title: 'KokkiKawaii',
+            img: 'https://i.imgur.com/UYXtnck.png',
+            desc: 'A full stack website that I created for me and my partner to use as a recipe app, to save our favorite recipes and retrieve them at any time.',
+            techs: ['HTML & CSS', 'Javascript', 'React', 'MongoDB', 'Node.js', 'Express'],
+            demo: 'https://reclib.vercel.app/',
+            code: 'unavailable'
         },
         {
             title: 'Project 2',
@@ -62,7 +64,7 @@ export default function WorkCard() {
 
             <div className='card' id="cardHolder">
                 
-                <img src={cards[currentCard].img} alt={cards[currentCard].title.toLowerCase()} />
+                <img src={cards[currentCard].img} alt={cards[currentCard].title.toLowerCase()}/>
                 <h4 id="name">{cards[currentCard].title}</h4>
                 <p id="card-info" >{cards[currentCard].desc}</p>
                 <div className="techs">
@@ -74,8 +76,12 @@ export default function WorkCard() {
                 </div>
 
                 <div className="buttons">
-                    <button>DEMO</button>
-                    <button>CODE</button>
+                    {
+                        cards[currentCard].demo !== 'unavailable' ?  <a href={cards[currentCard].demo} target="_blank" rel="noreferrer">DEMO</a> : <button id="grayedOut" title="Unavailable">DEMO</button>
+                    }
+                    {
+                        cards[currentCard].code !== 'unavailable' ?  <a href={cards[currentCard].code} target="_blank" rel="noreferrer">CODE</a> : <button id="grayedOut" title="Unavailable">CODE</button>
+                    }
                 </div>
             </div>
                     

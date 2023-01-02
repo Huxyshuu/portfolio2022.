@@ -10,6 +10,8 @@ export default function Work(props) {
         A small carousel of the most recent projects I've worked on.
         Currently consisting mostly of hobby projects that were a good
         source of fun and challenge to better my skills.
+        <br /><br />
+        If the code button is grayed out, you can contact me for more information.
       </p>,
       <button id="moreButton">See more!</button>
     ],
@@ -18,6 +20,8 @@ export default function Work(props) {
         Pieni karuselli viimeisimmistä projekteista, joiden parissa olen työskennellyt.
         Tällä hetkellä esillä on enimmäkseen harrastusprojekteja, jotka olivat hyviä
         ja hauskoja haasteita joiden myötä hioin osamistani. 
+        <br /><br />
+        Jos code painike näkyy harmaana, voitte ottaa yhteyttä saadaksenne lisätietoja.
       </p>,
       <button id="moreButton">Katso lisää!</button>
     ],
@@ -25,6 +29,8 @@ export default function Work(props) {
       <p id="work-info">
         これが私が取り組んできた最新のプロジェクトの小さなカルーセルです。
         現時点では、私のスキルを磨くための楽しくてチャレンジであった趣味のプロジェクトが展示されています。 
+        <br /><br />
+        コード ボタンがグレー表示されている場合は、私に連絡して詳細を確認してください。
       </p>,
       <button id="moreButton">もっと見せる！</button>
     ]

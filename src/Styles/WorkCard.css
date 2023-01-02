@@ -88,9 +88,39 @@
     margin-top: 1vh;
 }
 
+#grayedOut {
+    color: gray;
+    border: 0.1vh solid gray;
+}
+
+#grayedOut:hover {
+    cursor: not-allowed;
+
+}
+
+.buttons a {
+    margin: 1vh 1vh 2vh 1vh;
+    font-size: 2vh;
+    font-family: 'Inria Sans', sans-serif, 'Times New Roman';
+    font-weight: 200;
+    padding: 1vh 2.5vh;
+    color: var(--highlight-color);
+    background-color: transparent;
+    border: 0.1vh solid var(--highlight-color);
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    z-index: 1;
+    align-self: flex-end;
+    text-decoration: none;
+}
+
+.buttons a:hover {
+    background-color: var(--highlight-color);
+    color: #1D1D1D;
+    cursor: pointer;
+}
+
 .buttons button {
     margin: 1vh 1vh 2vh 1vh;
-    padding: 1vh 2vh;
     font-size: 1.5vh;
     font-family: 'Inria Sans', sans-serif, 'Times New Roman';
     font-weight: 200;

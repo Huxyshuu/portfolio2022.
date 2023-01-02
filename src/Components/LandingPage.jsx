@@ -13,7 +13,7 @@ export default function LandingPage(props) {
       </Link>
     ],
     FI: [
-      <h1 id='title'>Hei,<br/>Olen <span id="H">H</span>ugo,<br/>verkkokehittäjä</h1>,
+      <h1 id='title'>Hei,<br/>Olen <span id="H">H</span>ugo,<br/>web developer</h1>,
       <h2>Front End Developer</h2>,
       <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-20} duration={500}>
         <button id="landing-contact">Ota yhteyttä!</button>

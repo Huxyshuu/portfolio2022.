@@ -61,7 +61,7 @@ font-family: 'Murecho', sans-serif;
 h2 {
     font-family: 'Inria Sans', sans-serif, 'Times New Roman';
     font-weight: 200;
-    color: #8D8D8D;
+    color: #a2a2a2;
     font-size: 2.5vh;
     white-space: nowrap;
     letter-spacing: 0.5vh;
@@ -108,7 +108,7 @@ h2 {
     h2 {
         font-size: 3vh;
     }
-
+    
     #landing-contact {
         font-size: 3vh;
         padding-inline: 7vh;

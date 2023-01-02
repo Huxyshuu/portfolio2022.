@@ -31,7 +31,7 @@
 }
 
 #csharp {
-    filter: drop-shadow(-1vh -1vh var(--blur-ratio) #a179dc) drop-shadow(1vh 1vh var(--blur-ratio) #280068);
+    filter: drop-shadow(-1vh -1vh var(--blur-ratio) #1e9e25) drop-shadow(1vh 1vh var(--blur-ratio) #05930c);
 }
 
 #react {
