@@ -1,4 +1,4 @@
-## Portfolio of 2022, current
+## Legacy Portfolio of 2022
 
 **Link to site:** https://huxyshuu.netlify.app/
 
